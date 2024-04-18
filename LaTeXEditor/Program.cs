@@ -1,4 +1,4 @@
-namespace trabajo_de_sistemas_de_ecuaciones
+namespace TexEditor
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace trabajo_de_sistemas_de_ecuaciones
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new F());
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace trabajo_de_sistemas_de_ecuaciones
+namespace TexEditor
 {
     public partial class Sistemas2x2 : Form
     {

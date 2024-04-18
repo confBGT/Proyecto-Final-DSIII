@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace trabajo_de_sistemas_de_ecuaciones
+namespace TexEditor
 {
-    public partial class Sistema3x3 : Form
+    public partial class Sistemas3x3 : Form
     {
-        public Sistema3x3()
+        public Sistemas3x3()
         {
             InitializeComponent();
         }

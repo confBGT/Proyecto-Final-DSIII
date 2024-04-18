@@ -1,6 +1,6 @@
-﻿namespace D.S.III_Proyecto_Final_Parte_Luis
+﻿namespace TexEditor
 {
-	partial class MainForm
+	partial class Ecuaciones
 	{
 		/// <summary>
 		/// Required designer variable.
