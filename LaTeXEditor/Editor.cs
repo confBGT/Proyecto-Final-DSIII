@@ -32,6 +32,8 @@ namespace TexEditor
         {
             InitializeComponent();
 
+            Directory.CreateDirectory(tempPath);
+
             string initialText = $$"""\documentclass{{{Properties.Settings.Default.DocumentClass}}}\n\n\author{{{Properties.Settings.Default.Author}}}\n\n\begin{document}\n\n\end{document}""";
             initialText = initialText.Replace(@"\n", Environment.NewLine);
             rtb.Text = initialText;
