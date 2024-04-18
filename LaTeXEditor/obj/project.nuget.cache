@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I6IuySNT/ikehLwDMnwKcWwLbnJt88V7zG0yY884Q0OM5bGnbhnb3vaLa6yS8GUEmFinesBnhsDOpqFHy6RTeQ==",
+  "dgSpecHash": "Sv58nVRJro6AiMste80hGbl5/QbldtEj5s9q3l+dxrD/N3RZAWLz87yhhou3oWFNm/Y3J4RRaY1JZOjNV7oTtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\TexEditor.csproj",
+  "projectFilePath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\TexEditor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pazaro\\.nuget\\packages\\microsoft.web.webview2\\1.0.2420.47\\microsoft.web.webview2.1.0.2420.47.nupkg.sha512"
   ],

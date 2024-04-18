@@ -30,6 +30,8 @@ namespace TexEditor
         private void loadSettings()
         {
             compilationMode = (CompilationMode)Properties.Settings.Default.CompilationMode;
+            tbDocumentClass.Text = Properties.Settings.Default.DocumentClass;
+            tbAuthor.Text = Properties.Settings.Default.Author;
             updateCompilationMode();
 
             tbCompilationTime.Text = Properties.Settings.Default.CompilationTime.ToString();
@@ -80,6 +82,8 @@ namespace TexEditor
             Properties.Settings.Default.CompilationMode = (short)compilationMode;
             Properties.Settings.Default.CompilationTime = Convert.ToInt32(tbCompilationTime.Text);
             Properties.Settings.Default.CompilationChars = Convert.ToInt32(tbCompilationChars.Text);
+            Properties.Settings.Default.DocumentClass = tbDocumentClass.Text;
+            Properties.Settings.Default.Author = tbAuthor.Text;
 
             Properties.Settings.Default.Save();
         }

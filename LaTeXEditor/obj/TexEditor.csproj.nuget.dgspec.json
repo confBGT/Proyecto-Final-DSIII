@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\TexEditor.csproj": {}
+    "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\TexEditor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\TexEditor.csproj": {
+    "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\TexEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\TexEditor.csproj",
+        "projectUniqueName": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\TexEditor.csproj",
         "projectName": "TexEditor",
-        "projectPath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\TexEditor.csproj",
+        "projectPath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\TexEditor.csproj",
         "packagesPath": "C:\\Users\\Pazaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\Wolfram\\obj\\",
+        "outputPath": "C:\\Users\\Pazaro\\Desktop\\Proyecto-Final-DSIII\\LaTeXEditor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pazaro\\AppData\\Roaming\\NuGet\\NuGet.Config",

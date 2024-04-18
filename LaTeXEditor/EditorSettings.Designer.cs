@@ -38,9 +38,16 @@
             rbtnCompilationTime = new RadioButton();
             tabCompilation = new TabControl();
             tabDocument = new TabPage();
+            gbDocClass = new GroupBox();
+            tbDocumentClass = new TextBox();
+            gbAuthor = new GroupBox();
+            tbAuthor = new TextBox();
             tabControl.SuspendLayout();
             groupBox1.SuspendLayout();
             tabCompilation.SuspendLayout();
+            tabDocument.SuspendLayout();
+            gbDocClass.SuspendLayout();
+            gbAuthor.SuspendLayout();
             SuspendLayout();
             // 
             // btnCancel
@@ -94,6 +101,7 @@
             tbCompilationTime.Name = "tbCompilationTime";
             tbCompilationTime.Size = new Size(112, 23);
             tbCompilationTime.TabIndex = 3;
+            tbCompilationTime.TextAlign = HorizontalAlignment.Right;
             tbCompilationTime.KeyPress += numericFilter;
             // 
             // tbCompilationChars
@@ -102,6 +110,7 @@
             tbCompilationChars.Name = "tbCompilationChars";
             tbCompilationChars.Size = new Size(112, 23);
             tbCompilationChars.TabIndex = 2;
+            tbCompilationChars.TextAlign = HorizontalAlignment.Right;
             tbCompilationChars.KeyPress += numericFilter;
             // 
             // rbtnCompilationChars
@@ -139,6 +148,8 @@
             // 
             // tabDocument
             // 
+            tabDocument.Controls.Add(gbDocClass);
+            tabDocument.Controls.Add(gbAuthor);
             tabDocument.Location = new Point(4, 24);
             tabDocument.Name = "tabDocument";
             tabDocument.Padding = new Padding(3);
@@ -146,6 +157,40 @@
             tabDocument.TabIndex = 1;
             tabDocument.Text = "Documento";
             tabDocument.UseVisualStyleBackColor = true;
+            // 
+            // gbDocClass
+            // 
+            gbDocClass.Controls.Add(tbDocumentClass);
+            gbDocClass.Location = new Point(6, 63);
+            gbDocClass.Name = "gbDocClass";
+            gbDocClass.Size = new Size(339, 56);
+            gbDocClass.TabIndex = 1;
+            gbDocClass.TabStop = false;
+            gbDocClass.Text = "Document class";
+            // 
+            // tbDocumentClass
+            // 
+            tbDocumentClass.Location = new Point(6, 22);
+            tbDocumentClass.Name = "tbDocumentClass";
+            tbDocumentClass.Size = new Size(327, 23);
+            tbDocumentClass.TabIndex = 1;
+            // 
+            // gbAuthor
+            // 
+            gbAuthor.Controls.Add(tbAuthor);
+            gbAuthor.Location = new Point(6, 6);
+            gbAuthor.Name = "gbAuthor";
+            gbAuthor.Size = new Size(339, 51);
+            gbAuthor.TabIndex = 0;
+            gbAuthor.TabStop = false;
+            gbAuthor.Text = "Autor";
+            // 
+            // tbAuthor
+            // 
+            tbAuthor.Location = new Point(6, 19);
+            tbAuthor.Name = "tbAuthor";
+            tbAuthor.Size = new Size(327, 23);
+            tbAuthor.TabIndex = 0;
             // 
             // EditorSettings
             // 
@@ -162,6 +207,11 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             tabCompilation.ResumeLayout(false);
+            tabDocument.ResumeLayout(false);
+            gbDocClass.ResumeLayout(false);
+            gbDocClass.PerformLayout();
+            gbAuthor.ResumeLayout(false);
+            gbAuthor.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -176,5 +226,9 @@
         private RadioButton rbtnCompilationTime;
         private TabControl tabCompilation;
         private TabPage tabDocument;
+        private GroupBox gbAuthor;
+        private TextBox tbAuthor;
+        private GroupBox gbDocClass;
+        private TextBox tbDocumentClass;
     }
 }
