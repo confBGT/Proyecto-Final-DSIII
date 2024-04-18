@@ -215,6 +215,7 @@
             rtb.ScrollBars = RichTextBoxScrollBars.ForcedVertical;
             rtb.Size = new Size(784, 387);
             rtb.TabIndex = 5;
+            rtb.Text = "";
             rtb.WordWrap = false;
             rtb.TextChanged += rtbChanged;
             rtb.KeyPress += rtbKeyPress;
@@ -255,7 +256,7 @@
             // 
             // openFileDialog
             // 
-            openFileDialog.FileName = "openFileDialog";
+            openFileDialog.Filter = "LaTeX|*.tex|All files|*.*";
             // 
             // F
             // 

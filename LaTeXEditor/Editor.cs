@@ -229,6 +229,35 @@ namespace TexEditor
             }
         }
 
+        private void openFile(object sender, EventArgs e)
+        {
+            if (!isSaved)
+            {
+                DialogResult result = MessageBox.Show("Salir sin guardar?", "LaTeX Editor", MessageBoxButtons.YesNoCancel);
+
+                switch (result)
+                {
+                    case DialogResult.Yes:
+                        break;
+                    case DialogResult.No:
+                        save(sender, e);
+                        break;
+                    case DialogResult.Cancel:
+                        return;
+                }
+            }
+
+            openFileDialog.ShowDialog();
+            
+            if (openFileDialog.FileName != string.Empty)
+            {
+                rtb.Text = File.ReadAllText(openFileDialog.FileName);
+                instanceId = Guid.NewGuid();
+                webView.Source = new Uri(instanceFile("pdf"));
+                webView.Reload();
+            }
+        }
+
         private void rtbChanged(object sender, EventArgs e)
         {
             isSaved = false;
@@ -272,11 +301,6 @@ namespace TexEditor
         {
             EditorSettings form = new EditorSettings();
             form.ShowDialog();
-        }
-
-        private void openFile(object sender, EventArgs e)
-        {
-            openFileDialog.ShowDialog();
         }
     }
 }
